@@ -1,0 +1,305 @@
+[p LITE_MODE AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F887 ]
+[d frameptr 6 ]
+"33 C:\Users\tonyj\Desktop\work\ad.X\AD.c
+[v _AD_SUB AD_SUB `(v  1 e 1 0 ]
+"48
+[v _AD_MCU_INIT AD_MCU_INIT `(v  1 e 1 0 ]
+"6 C:\Users\tonyj\Desktop\work\ad.X\BUTTON.c
+[v _BUTTONMCUInit BUTTONMCUInit `(v  1 e 1 0 ]
+"11
+[v _isBUTTONOn isBUTTONOn `(uc  1 e 1 0 ]
+"23
+[v _ButtonDetect ButtonDetect `(v  1 e 1 0 ]
+"3 C:\Users\tonyj\Desktop\work\ad.X\DELAY.c
+[v _delay_ms delay_ms `(v  1 e 1 0 ]
+"13
+[v _delay_us delay_us `(v  1 e 1 0 ]
+"10 E:\Program\XC8\pic\sources\c90\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 E:\Program\XC8\pic\sources\c90\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 E:\Program\XC8\pic\sources\c90\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"6 C:\Users\tonyj\Desktop\work\ad.X\LCD.c
+[v _LCD_en_command LCD_en_command `(v  1 e 1 0 ]
+"27
+[v _LCD_init LCD_init `(v  1 e 1 0 ]
+"37
+[v _LCD_en_dat LCD_en_dat `(v  1 e 1 0 ]
+"49
+[v _LCD_Read_dat LCD_Read_dat `(uc  1 e 1 0 ]
+"67
+[v _LCD_set_xy LCD_set_xy `(v  1 e 1 0 ]
+"87
+[v _LCD_write_string LCD_write_string `(v  1 e 1 0 ]
+"102
+[v _LCD_MCU_init LCD_MCU_init `(v  1 e 1 0 ]
+"112
+[v _InitScrn InitScrn `(v  1 e 1 0 ]
+"120
+[v _LCD_Busy LCD_Busy `(v  1 e 1 0 ]
+"61 C:\Users\tonyj\Desktop\work\ad.X\main.c
+[v _LED_MCU_INIT LED_MCU_INIT `(v  1 e 1 0 ]
+"72
+[v _main main `(v  1 e 1 0 ]
+"7 C:\Users\tonyj\Desktop\work\ad.X/AD.h
+[v _ADresult ADresult `ul  1 e 4 0 ]
+"8
+[v _ADtemp ADtemp `ul  1 e 4 0 ]
+"8 C:\Users\tonyj\Desktop\work\ad.X/BUTTON.h
+[v _flag_but_once flag_but_once `uc  1 e 1 0 ]
+"9
+[v _flag_ph_st flag_ph_st `uc  1 e 1 0 ]
+[s S336 . 1 `uc 1 RB0 1 0 :1:0 
+`uc 1 RB1 1 0 :1:1 
+`uc 1 RB2 1 0 :1:2 
+`uc 1 RB3 1 0 :1:3 
+`uc 1 RB4 1 0 :1:4 
+`uc 1 RB5 1 0 :1:5 
+`uc 1 RB6 1 0 :1:6 
+`uc 1 RB7 1 0 :1:7 
+]
+"245 E:\Program\XC8\pic\include\pic16f887.h
+[u S345 . 1 `S336 1 . 1 0 ]
+[v _PORTBbits PORTBbits `VES345  1 e 1 @6 ]
+[s S43 . 1 `uc 1 RC0 1 0 :1:0 
+`uc 1 RC1 1 0 :1:1 
+`uc 1 RC2 1 0 :1:2 
+`uc 1 RC3 1 0 :1:3 
+`uc 1 RC4 1 0 :1:4 
+`uc 1 RC5 1 0 :1:5 
+`uc 1 RC6 1 0 :1:6 
+`uc 1 RC7 1 0 :1:7 
+]
+"307
+[u S52 . 1 `S43 1 . 1 0 ]
+[v _PORTCbits PORTCbits `VES52  1 e 1 @7 ]
+"352
+[v _PORTD PORTD `VEuc  1 e 1 @8 ]
+[s S149 . 1 `uc 1 RE0 1 0 :1:0 
+`uc 1 RE1 1 0 :1:1 
+`uc 1 RE2 1 0 :1:2 
+`uc 1 RE3 1 0 :1:3 
+]
+"427
+[u S154 . 1 `S149 1 . 1 0 ]
+[v _PORTEbits PORTEbits `VES154  1 e 1 @9 ]
+[s S260 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 CCP1IF 1 0 :1:2 
+`uc 1 SSPIF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+]
+"553
+[u S268 . 1 `S260 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES268  1 e 1 @12 ]
+"1238
+[v _ADRESH ADRESH `VEuc  1 e 1 @30 ]
+"1245
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @31 ]
+[s S213 . 1 `uc 1 ADON 1 0 :1:0 
+`uc 1 GO_nDONE 1 0 :1:1 
+`uc 1 CHS 1 0 :4:2 
+`uc 1 ADCS 1 0 :2:6 
+]
+"1276
+[s S218 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO 1 0 :1:1 
+`uc 1 CHS0 1 0 :1:2 
+`uc 1 CHS1 1 0 :1:3 
+`uc 1 CHS2 1 0 :1:4 
+`uc 1 CHS3 1 0 :1:5 
+`uc 1 ADCS0 1 0 :1:6 
+`uc 1 ADCS1 1 0 :1:7 
+]
+[s S227 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 nDONE 1 0 :1:1 
+]
+[s S230 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO_DONE 1 0 :1:1 
+]
+[u S233 . 1 `S213 1 . 1 0 `S218 1 . 1 0 `S227 1 . 1 0 `S230 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES233  1 e 1 @31 ]
+"1346
+[v _OPTION_REG OPTION_REG `VEuc  1 e 1 @129 ]
+"1416
+[v _TRISA TRISA `VEuc  1 e 1 @133 ]
+[s S314 . 1 `uc 1 TRISB0 1 0 :1:0 
+`uc 1 TRISB1 1 0 :1:1 
+`uc 1 TRISB2 1 0 :1:2 
+`uc 1 TRISB3 1 0 :1:3 
+`uc 1 TRISB4 1 0 :1:4 
+`uc 1 TRISB5 1 0 :1:5 
+`uc 1 TRISB6 1 0 :1:6 
+`uc 1 TRISB7 1 0 :1:7 
+]
+"1495
+[u S323 . 1 `S314 1 . 1 0 ]
+[v _TRISBbits TRISBbits `VES323  1 e 1 @134 ]
+[s S22 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 TRISC3 1 0 :1:3 
+`uc 1 TRISC4 1 0 :1:4 
+`uc 1 TRISC5 1 0 :1:5 
+`uc 1 TRISC6 1 0 :1:6 
+`uc 1 TRISC7 1 0 :1:7 
+]
+"1557
+[u S31 . 1 `S22 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES31  1 e 1 @135 ]
+"1602
+[v _TRISD TRISD `VEuc  1 e 1 @136 ]
+"1664
+[v _TRISE TRISE `VEuc  1 e 1 @137 ]
+"2970
+[v _ADRESL ADRESL `VEuc  1 e 1 @158 ]
+"2977
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @159 ]
+"3387
+[v _ANSEL ANSEL `VEuc  1 e 1 @392 ]
+"3449
+[v _ANSELH ANSELH `VEuc  1 e 1 @393 ]
+"56 C:\Users\tonyj\Desktop\work\ad.X\main.c
+[v _flag_br_end flag_br_end `uc  1 e 1 0 ]
+"57
+[v _isPhPositive isPhPositive `uc  1 e 1 0 ]
+"58
+[v _flag_ph_end flag_ph_end `uc  1 e 1 0 ]
+"72
+[v _main main `(v  1 e 1 0 ]
+{
+"134
+} 0
+"61
+[v _LED_MCU_INIT LED_MCU_INIT `(v  1 e 1 0 ]
+{
+"70
+} 0
+"87 C:\Users\tonyj\Desktop\work\ad.X\LCD.c
+[v _LCD_write_string LCD_write_string `(v  1 e 1 0 ]
+{
+[v LCD_write_string@X X `uc  1 a 1 wreg ]
+[v LCD_write_string@X X `uc  1 a 1 wreg ]
+[v LCD_write_string@Y Y `uc  1 p 1 11 ]
+[v LCD_write_string@s s `*.24uc  1 p 1 12 ]
+"89
+[v LCD_write_string@X X `uc  1 a 1 0 ]
+"97
+} 0
+"67
+[v _LCD_set_xy LCD_set_xy `(v  1 e 1 0 ]
+{
+[v LCD_set_xy@x x `uc  1 a 1 wreg ]
+"69
+[v LCD_set_xy@address address `uc  1 a 1 9 ]
+"67
+[v LCD_set_xy@x x `uc  1 a 1 wreg ]
+[v LCD_set_xy@y y `uc  1 p 1 7 ]
+"70
+[v LCD_set_xy@x x `uc  1 a 1 10 ]
+"76
+} 0
+"37
+[v _LCD_en_dat LCD_en_dat `(v  1 e 1 0 ]
+{
+[v LCD_en_dat@dat dat `uc  1 a 1 wreg ]
+[v LCD_en_dat@dat dat `uc  1 a 1 wreg ]
+"39
+[v LCD_en_dat@dat dat `uc  1 a 1 1 ]
+"46
+} 0
+"120
+[v _LCD_Busy LCD_Busy `(v  1 e 1 0 ]
+{
+"122
+[v LCD_Busy@busyFlag busyFlag `uc  1 a 1 3 ]
+"131
+} 0
+"49
+[v _LCD_Read_dat LCD_Read_dat `(uc  1 e 1 0 ]
+{
+"51
+[v LCD_Read_dat@dat dat `uc  1 a 1 1 ]
+"64
+} 0
+"27
+[v _LCD_init LCD_init `(v  1 e 1 0 ]
+{
+"34
+} 0
+"102
+[v _LCD_MCU_init LCD_MCU_init `(v  1 e 1 0 ]
+{
+"109
+} 0
+"112
+[v _InitScrn InitScrn `(v  1 e 1 0 ]
+{
+"117
+} 0
+"6
+[v _LCD_en_command LCD_en_command `(v  1 e 1 0 ]
+{
+[v LCD_en_command@command command `uc  1 a 1 wreg ]
+[v LCD_en_command@command command `uc  1 a 1 wreg ]
+"8
+[v LCD_en_command@command command `uc  1 a 1 6 ]
+"24
+} 0
+"23 C:\Users\tonyj\Desktop\work\ad.X\BUTTON.c
+[v _ButtonDetect ButtonDetect `(v  1 e 1 0 ]
+{
+"38
+} 0
+"11
+[v _isBUTTONOn isBUTTONOn `(uc  1 e 1 0 ]
+{
+"22
+} 0
+"3 C:\Users\tonyj\Desktop\work\ad.X\DELAY.c
+[v _delay_ms delay_ms `(v  1 e 1 0 ]
+{
+"5
+[v delay_ms@j j `ui  1 a 2 3 ]
+"6
+[v delay_ms@k k `uc  1 a 1 5 ]
+"3
+[v delay_ms@n n `ui  1 p 2 0 ]
+"12
+} 0
+"33 C:\Users\tonyj\Desktop\work\ad.X\AD.c
+[v _AD_SUB AD_SUB `(v  1 e 1 0 ]
+{
+[v AD_SUB@k k `uc  1 a 1 wreg ]
+[v AD_SUB@k k `uc  1 a 1 wreg ]
+"36
+[v AD_SUB@k k `uc  1 a 1 5 ]
+"47
+} 0
+"13 C:\Users\tonyj\Desktop\work\ad.X\DELAY.c
+[v _delay_us delay_us `(v  1 e 1 0 ]
+{
+[v delay_us@n n `uc  1 a 1 wreg ]
+[v delay_us@n n `uc  1 a 1 wreg ]
+"16
+[v delay_us@n n `uc  1 a 1 0 ]
+"22
+} 0
+"6 C:\Users\tonyj\Desktop\work\ad.X\BUTTON.c
+[v _BUTTONMCUInit BUTTONMCUInit `(v  1 e 1 0 ]
+{
+"10
+} 0
+"48 C:\Users\tonyj\Desktop\work\ad.X\AD.c
+[v _AD_MCU_INIT AD_MCU_INIT `(v  1 e 1 0 ]
+{
+"56
+} 0
